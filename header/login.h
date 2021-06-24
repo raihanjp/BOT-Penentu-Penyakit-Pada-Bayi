@@ -19,11 +19,11 @@ int login_page(int x, char* filename) {
         char *str2;
         char ID[255], Pass[255];
 		
-	printf("\n														");
-        printf("			Sisa Percobaan %d						\n", 3 - x); 
+	printf("\n						       ");
+        printf("			Sisa Percobaan %d	     \n", 3 - x); 
 	printf("===================================================\n\n");	
-        printf(" 	ID\t\t: "); scanf("%s", &ID);          // input ID
-        printf(" 	Password\t: "); scanf("%s", &Pass);  // input Pass
+        printf(" 	ID\t\t: "); scanf("%s", &ID);          // input ID/Username
+        printf(" 	Password\t: "); scanf("%s", &Pass);  // input Password
         fflush(stdin);
 
         // membuka file "data/staff.txt"
@@ -42,7 +42,6 @@ int login_page(int x, char* filename) {
 
             // membandingkan input dengan data dalam file
             if(strcmp(str1, ID) == 0 && strcmp(str2, Pass) == 0) {
-
                 fclose(txt);
                 return 1;
             }
@@ -54,7 +53,6 @@ int login_page(int x, char* filename) {
         login_page(x, filename);
     }
     else {
-
         fflush(stdin);
         main();
     }
@@ -62,7 +60,6 @@ int login_page(int x, char* filename) {
 }
 
 int admin_login(int x, char* filename) {
-
     /*
     fungsi ini berfungsi untuk admin login dimana diperlukan
     kontrol admin untuk menghapus staff dalam sistem
@@ -76,8 +73,8 @@ int admin_login(int x, char* filename) {
         char ID[255], Pass[255];
 
         printf("\nSisa percobaan %d\n", 3 - x);
-        printf("ID: "); scanf("%s", &ID);           // input ID
-        printf("Password: "); scanf("%s", &Pass);   // input Pass
+        printf("ID: "); scanf("%s", &ID);           // input ID/Username
+        printf("Password: "); scanf("%s", &Pass);   // input Password
         fflush(stdin);
 
         // membuka file "data/admin.txt"
@@ -96,7 +93,6 @@ int admin_login(int x, char* filename) {
 
             // membandingkan input ID dan Pass dengan ID dan pass yang ada pada FILE
             if(strcmp(str1, ID) == 0 && strcmp(str2, Pass) == 0) {
-
                 fclose(txt);
                 return 1;
             }
@@ -108,7 +104,6 @@ int admin_login(int x, char* filename) {
         admin_login(x, filename);
     }
     else {
-        
         fflush(stdin);
         main_menu();
     }
