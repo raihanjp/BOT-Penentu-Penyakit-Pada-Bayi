@@ -13,9 +13,9 @@ int register_staff() {
 	
 	fflush(stdin);
 
-    // membuka file staff
+        // membuka file staff
 	FILE *fptr;
-    fptr = fopen("data/staff.txt", "a+");
+        fptr = fopen("data/staff.txt", "a+");
 	
 	printf(" Selamat Datang Staff Baru!\n");
 	printf("============================\n");
@@ -24,15 +24,15 @@ int register_staff() {
 	printf(" Masukkan ID: "); scanf("%s", &ID);
 	printf(" Masukkan Password: "); scanf("%s", &Pass);
 
-    // menulis ke text ke file
-    fprintf(fptr, "%s %s\n", ID, Pass);
+        // menulis ke text ke file
+        fprintf(fptr, "%s %s\n", ID, Pass);
 	
-    // tutup file
-    fclose(fptr);
+        // tutup file
+        fclose(fptr);
 	printf("\n Staff berhasil ditambahkan\n");
 	printf("\n Apakah masih ada staff yang ingin didaftarkan?(Y/N) "); scanf("%s", &confm);
 	if(confm == 'y' || confm == 'Y') {
-		register_staff();
+		register_staff(); //mengulang dari awal
 	}
 	else if(confm == 'n' || confm == 'N') {
 		main_menu();	// terdapat dalam header menu.h
