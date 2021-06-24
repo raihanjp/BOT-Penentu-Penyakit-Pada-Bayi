@@ -23,14 +23,14 @@ int manage_staff() {
 
     switch(inp) {
 		
-        case 1: {
+        case 1: {					// mendaftar ID dan password staff yang baru
 
             fflush(stdin);
-            register_staff(); // terdapat dalam header register.h
+            register_staff(); 				// terdapat dalam header register.h
 
         }
 
-        case 2: {
+        case 2: {				      // menghapus ID dan password staff, hanya bisa dilakukan jika login menggunakan ID dan password ADMIN
 
             system("cls");
             printf("==================="); printf("\n");
@@ -55,7 +55,7 @@ int manage_staff() {
 
         }
 
-        case 3: {
+        case 3: {				   // tampilan panduan
 
             printf("\n");
             printf("=================================================="); printf("\n");
@@ -71,15 +71,15 @@ int manage_staff() {
             
         }
 		
-		case 4: {
+	case 4: {				    //kembali ke main menu
 
-			fflush(stdin);
-			main_menu();
-			break;
+		fflush(stdin);
+		main_menu();
+		break;
 
-		}
+	}
 		
-    	default: {
+    	default: {				    //error handling jika salah input 
 
            printf(" Mohon Masukkan Input Yang Benar!\n");
            system("pause");
