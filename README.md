@@ -1,6 +1,6 @@
 # BOT-Penentu-Penyakit-Pada-Bayi
 
-This BOT was made to help the medical world by determining diseases for babies. This has several features, such as :
+This BOT was made to help the medical world by determining diseases for babies. This BOT has several features, such as :
 1. Running tests to babies
 2. Filling the patient's data
 3. Calculate the patient's data
