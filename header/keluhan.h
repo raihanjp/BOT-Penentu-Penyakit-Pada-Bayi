@@ -1,3 +1,4 @@
+//Shaniya Camita Farin 2006534865
 /*
 Header ini berisikan tentang gejala-gejala yang mungkin terjadi pada pasien,
 yang kemudian akan ditanyakan pada user. Metode penentuan indikasi penyakit
