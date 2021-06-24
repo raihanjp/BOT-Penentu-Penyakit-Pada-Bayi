@@ -12,16 +12,16 @@ int login_page(int x, char* filename) {
     jika salah maka akan dibawa kembali ke halaman pertama
     */
 
-    if(x < 3) {
+    if(x < 3) {										
         char string[256];
         char *stripped;
         char *str1;
         char *str2;
         char ID[255], Pass[255];
 		
-		printf("\n														");
+	printf("\n														");
         printf("			Sisa Percobaan %d						\n", 3 - x); 
-		printf("===================================================\n\n");	
+	printf("===================================================\n\n");	
         printf(" 	ID\t\t: "); scanf("%s", &ID);          // input ID
         printf(" 	Password\t: "); scanf("%s", &Pass);  // input Pass
         fflush(stdin);
