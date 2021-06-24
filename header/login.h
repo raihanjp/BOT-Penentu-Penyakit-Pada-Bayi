@@ -19,8 +19,8 @@ int login_page(int x, char* filename) {
         char *str2;
         char ID[255], Pass[255];
 		
-	printf("\n						       ");
-        printf("			Sisa Percobaan %d	     \n", 3 - x); 
+	printf("\n");
+        printf("	Sisa Percobaan %d	     \n", 3 - x); 
 	printf("===================================================\n\n");	
         printf(" 	ID\t\t: "); scanf("%s", &ID);          // input ID/Username
         printf(" 	Password\t: "); scanf("%s", &Pass);  // input Password
