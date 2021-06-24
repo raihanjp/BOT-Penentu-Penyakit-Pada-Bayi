@@ -2,7 +2,8 @@
 /*
 Header ini berisikan tentang gejala-gejala yang mungkin terjadi pada pasien,
 yang kemudian akan ditanyakan pada user. Metode penentuan indikasi penyakit
-menggunakan metode depth first search
+menggunakan metode depth first search. Output dari function keluhan ini berupa
+status pasien sesuai dengan pertanyaan yang telah dijawab sebelumnya.
 */
 int keluhan(char *status_pasien){
 	int q=0;
