@@ -16,14 +16,14 @@ int main_menu(){
 	int input;
 	
 	printf("=====================================================\n\n");
-	printf("	  		MENU			\n\n");
-	printf("	1. LAKUKAN TES			\n");
-	printf("	2. DATA PASIEN			\n");
-	printf("	3. HITUNG PASIEN		\n");
-	printf("	4. HAPUS DATA			\n");
-	printf("	5. MANAGE STAFF			\n");
-	printf("	6. PANDUAN				\n");
-	printf("	7. KELUAR				\n\n");
+	printf("	  		MENU			     \n\n");
+	printf("	1. LAKUKAN TES				       \n");
+	printf("	2. DATA PASIEN				       \n");
+	printf("	3. HITUNG PASIEN			       \n");
+	printf("	4. HAPUS DATA				       \n");
+	printf("	5. MANAGE STAFF				       \n");
+	printf("	6. PANDUAN				       \n");
+	printf("	7. KELUAR				     \n\n");
 	printf("=====================================================\n\n");	
 	
 	printf("	INPUT: "); 
@@ -31,39 +31,39 @@ int main_menu(){
 	
 	switch(input){
 		case 1:
-			tes();
+			tes(); // terdapat dalam header tes.h
 			break;
 		
 		case 2:
-			list_pasien();
+			list_pasien(); //terdapat dalam header tes.h
 			break;
 
 		case 3:
-			hitung_pasien();
+			hitung_pasien(); //terdapat dalam header tes.h
 			break;
 
 		case 4:
-			hapus_pasien();
+			hapus_pasien(); //terdapat dalam header tes.h
 			break;
 		
 		case 5:
-			manage_staff();
+			manage_staff(); //terdapat dalam header staff_man.h
 			break;
 		
 		case 6:
-			panduan();
+			panduan(); //terdapat dalam header main.h
 			break;
 		
 		case 7:
-			exit(1);
+			exit(1); //exit program
 			break;
 			
-		default: {
+		default: {//error handling jika user memasukkan input yang tidak sesuai
 			printf("MASUKKAN PILIHAN YANG BENAR!");
             system("pause");
             fflush(stdin);
             system("cls");
-            main();
+            main(); //kembali ke function main() yang terdapat di main.c, berupa tampilan awal program
 		}
 	}
 	
@@ -75,16 +75,16 @@ void panduan(){
   	printf("============================================================"); printf("\n");
 	printf("                            HELP                            "); printf("\n");
 	printf("============================================================"); printf("\n \n");
-	printf(" 1. Silahkan pilih menu yang anda lakukan	\n");
-	printf(" 2. Pilih menu 1 untuk melakukan tes pada keluhan anda			\n");
-	printf(" 3. Pilih menu 2 untuk mengisi data identitas diri pasien			\n");
-	printf(" 4. Pilih menu 3 untuk menghitung pasien yang sudah terdaftar		\n");
-	printf(" 5. Pilih menu 4 untuk menghapus data pasien			\n");
-	printf(" 6. Pilih menu 5 KHUSUS UNTUK STAFF untuk mengubah data pada staff			\n");
+	printf(" 1. Silahkan pilih menu yang anda lakukan		  \n");
+	printf(" 2. Pilih menu 1 untuk melakukan tes pada keluhan anda	  \n");
+	printf(" 3. Pilih menu 2 untuk mengisi data identitas diri pasien \n");
+	printf(" 4. Pilih menu 3 untuk menghitung pasien yang sudah terdaftar\n");
+	printf(" 5. Pilih menu 4 untuk menghapus data pasien		  \n");
+	printf(" 6. Pilih menu 5 KHUSUS UNTUK STAFF untuk mengubah data pada staff\n");
 	printf(" 7. Pilih menu 7 untuk keluar dari prgoram		\n\n");
 	printf("============================================================"); printf("\n");
 	system("pause");
 	system("cls");
 	fflush(stdin);
-	main_menu();
+	main_menu(); //kembali ke main_menu() yang terdapat di header menu.h
 }
