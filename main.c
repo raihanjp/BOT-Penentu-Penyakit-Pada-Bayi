@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <windows.h>
-// semua header yang di include disini dapat dilihat di folder header
+// semua header yang diinclude disini dapat dilihat di folder header
 #include "header/login.h"
 #include "header/menu.h"
 #include "header/tes.h"
@@ -16,7 +16,7 @@ ID: admin
 pass: admin
 */
 
-int main() {
+int main() {										//Main program meminta input login & ada panduan
 	load_data();
 	system("cls");
 	
@@ -31,19 +31,19 @@ int main() {
 
     switch(fspage) {
 
-        case 1:
+        case 1:										 // jika input 1
             system("cls");
             printf("==================================================="); printf("\n");
-            printf("\t\tSTAFF LOGIN    "); printf("\n");
+            printf("\t\tSTAFF LOGIN    								   "); printf("\n");
             printf("==================================================="); printf("\n");
 
-            if(!login_page(0, "data/staff.txt")) {  // masuk kedalam staff login page
+            if(!login_page(0, "data/staff.txt")) {  // memanggil function login_page di header "login.h", untuk menginput data login
                 fflush(stdin);
                 printf(" Login Gagal!");
                 system("pause");
                 main();
             }
-            if(1) {                                // jika return 1 maka akan masuk kedalam main_menu
+            if(1) {                                // jika return 1 maka akan lanjut ke menu utama di function main_menu
 				system("cls");
 				printf("=====================================================\n\n	");
 				printf("	 LOGIN BERHASIL										\n\n");
@@ -52,22 +52,21 @@ int main() {
 				main_menu();
             }
             break;
-
-        case 2:
+	
+        case 2:										// jika input 2, akan ada panduan program
             printf("\n");
             printf("============================================================"); printf("\n");
 			printf("                            HELP                            "); printf("\n");
 			printf("============================================================"); printf("\n \n");
-            printf(" Program ini berfungsi untuk mendata banyaknya pasien\
-            \n dalam suatu rumah sakit. Program ini dapat menset\
-            \n status pasien sakit, sehat, dan dalam pemantauan.\n");
+            printf(" Program ini berfungsi untuk mendiagnosa penyakit\
+            \n umum pada bayi.\n");
             printf("============================================================"); printf("\n");
             system("pause");
             system("cls");
             fflush(stdin);
             main();
         
-        default :
+        default :									// error handling jika input selain 1/2
             printf("Masukkan pilihan yang benar!\n");
             system("pause");
             fflush(stdin);
