@@ -11,7 +11,7 @@ This BOT was made to help the medical world by determining diseases for babies. 
 
 This BOT will match your complaints on your babies and determine its disease. This BOT is easy to access and could also print the patient's data and login's data to a text file in your computer. 
 
-Video Link : 
+Video Link : https://youtu.be/W0512WAhIvQ
 
 This source code is made by :
 1. Raihan Jana Prasetya <2006527651>
