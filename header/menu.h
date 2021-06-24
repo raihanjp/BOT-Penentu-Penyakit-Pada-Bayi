@@ -77,7 +77,7 @@ void panduan(){
 	printf(" 1. Silahkan pilih menu yang anda lakukan	\n");
 	printf(" 2. Pilih menu 1 untuk melakukan tes pada keluhan anda			\n");
 	printf(" 3. Pilih menu 2 untuk mengisi data identitas diri pasien			\n");
-	printf(" 4. Pilih menu 3 untuk mengurutkan data pasien yang telah dimasukkan		\n");
+	printf(" 4. Pilih menu 3 untuk menghitung pasien yang sudah terdaftar		\n");
 	printf(" 5. Pilih menu 4 untuk menghapus data pasien			\n");
 	printf(" 6. Pilih menu 5 KHUSUS UNTUK STAFF untuk mengubah data pada staff			\n");
 	printf(" 7. Pilih menu 7 untuk keluar dari prgoram		\n\n");
