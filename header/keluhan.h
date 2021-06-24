@@ -6,7 +6,8 @@ menggunakan metode depth first search
 int keluhan(char *status_pasien){
 	int q=0;
 	
-	char g1[]="Apakah bayi mengalami ruam merah gelap yang tidak memudar\noleh tekanan?\n1. Ya\n2. Tidak\nJawab: ",
+	//line 10-69 berisi list pertanyaan
+	char g1[]="Apakah bayi mengalami ruam merah gelap yang tidak memudar\noleh tekanan?\n1. Ya\n2. Tidak\nJawab: ", 
 		 g2[]="Apakah bayi menolak makan selama lebih dari 3 jam\n(pada bayi berusia di bawah 3 bulan) atau\nlebih dari 6 jam (pada bayi berusia di atas 3 bulan)?\n1. Ya\n2. Tidak\nJawab: ",
 		 g3[]="Apakah bayi mengalami demam?\n1. Ya\n2. Tidak\nJawab: ",
 		 g4[]="Apakah bayi mengalami muntah?\n1. Ya\n2. Tidak\nJawab: ",
@@ -44,7 +45,7 @@ int keluhan(char *status_pasien){
 		 g36[]="Apakah bayi menolak minum dari botol?\n1. Ya\n2. Tidak\nJawab: ",
 		 g37[]="Apakah bayi tampak tidak sehat?\n1. Ya\n2. Tidak\nJawab: ",
 		 g38[]="Apakah bayi tidak menghabiskan semua susu\ndi botolnya?\n1. Ya\n2. Tidak\nJawab: ",
-		 p1[]="\nBayi Anda mengalami demam.\nTindakan yang dapat dilakukan diantaranya:\n1.Redakanlah demamnya\n2.Usahakan agar bayi banyak minum\n3.Atur suhu ruangan 15-20°C\n4.Tahan temperatur anak agar tetap rendah\n",
+		 p1[]="\nBayi Anda mengalami demam.\nTindakan yang dapat dilakukan diantaranya:\n1.Redakanlah demamnya\n2.Usahakan agar bayi banyak minum\n3.Atur suhu ruangan 15-20Â°C\n4.Tahan temperatur anak agar tetap rendah\n",
 		 p2[]="\nBayi Anda mengalami rasa tidak sehat.\nTindakan yang dapat dilakukan diantaranya:\n1.Si anak mungkin mengalami infeksi saluran\n  kemih, dokter akan memeriksa contoh",
 		 p2b[]="\n  urinnya dan dokter akan memberikan resep antibiotik\n2.Gejala ini mungkin akibat diabetes mellitus.\n  Kondisi ini disebabkan oleh kurangnya\n  produksi Hormon Insulin, dokter akan\n  mengambil contoh darah dan urin si anak",
 		 p2c[]="\n  untuk mengukur tingkat darahnya. Jika\n  diagnosis ini benar, si anak mungkin memerlukan suntikan insulin selama\n  hidupnya.\n3.Mungkin menderita suatu penyakit\n  tersembunyi, misalnya infeksi saluran\n  kemih. Periksakanlah ke dokter yang akan",
@@ -67,6 +68,7 @@ int keluhan(char *status_pasien){
 		 b1[]="\n==============KESIMPULAN & SOLUSI===============",
 		 b2[]="================================================";
 		 
+	//algoritma metode depth first search
 	g1: system("cls"); printf("%s", g1); scanf("%d", &q);
 	if(q==1){
 		g2: system("cls"); printf("%s", g2); scanf("%d", &q);
